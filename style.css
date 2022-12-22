@@ -1,0 +1,161 @@
+/* Add a web font to the website */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* Use a minimalistic color palette */
+:root {
+    --primary-color: #333;
+    --secondary-color: #fff;
+    --tertiary-color: #ccc;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+
+/* Light theme styles */
+.light-theme {
+    background-color: #fff;
+    color: #333;
+}
+
+.light-theme header {
+    background-color: #333;
+    color: white;
+}
+
+/* Dark theme styles */
+.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-theme header {
+    background-color: #fff;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: var(--tertiary-color);
+}
+
+
+/* Toggle button styles */
+button.toggle-button {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid var(--tertiary-color);
+    border-radius: 8px;
+    width: 80px; 
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+button.toggle-button:hover {
+    background-color: var(--tertiary-color);
+}
+
+button.toggle-button:active {
+    border-color: var(--primary-color);
+}
+
+button.toggle-button.on {
+    border-color: var(--primary-color);
+}
+
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Use media queries to create a responsive design */
+@media (max-width: 600px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin-bottom: 10px;
+    }
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* Use gradients and shadows to add visual interest */
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
+    background-image: linear-gradient(to right, var(--primary-color), #222);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
