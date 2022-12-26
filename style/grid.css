@@ -1,5 +1,4 @@
-@import "base.css";
-.grid-container {
+.grid-container-right {
     display: grid;
     grid-template-columns: 40% 60%;
     justify-content: space-evenly;
@@ -7,7 +6,15 @@
 
 }
 
-.grid-container img {
+.grid-container-left {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    justify-content: space-evenly;
+    border: 1px solid black;
+
+}
+
+.grid-container-left, .grid-container-right img {
     width: 400px;
 }
 
@@ -25,8 +32,4 @@
     justify-content: center;
     align-items: center;
     border: 1px solid black;
-}
-
-.hide {
-    display: none;
 }

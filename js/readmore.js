@@ -1,5 +1,5 @@
 function AddReadMore() {
-    var carLmt = 300;
+    var charLimit = 300;
     var readMoreTxt = " ... Read More";
     var readLessTxt = " Read Less";
 
@@ -8,9 +8,9 @@ function AddReadMore() {
             return;
 
         var allstr = $(this).text();
-        if (allstr.length > carLmt) {
-            var firstSet = allstr.substring(0, carLmt);
-            var secdHalf = allstr.substring(carLmt, allstr.length);
+        if (allstr.length > charLimit) {
+            var firstSet = allstr.substring(0, charLimit);
+            var secdHalf = allstr.substring(charLimit, allstr.length);
             var strtoadd = firstSet + "<span class='SecSec'>" + secdHalf + "</span><span class='readMore'  title='Click to Show More'>" + readMoreTxt + "</span><span class='readLess' title='Click to Show Less'>" + readLessTxt + "</span>";
             $(this).html(strtoadd);
         }
