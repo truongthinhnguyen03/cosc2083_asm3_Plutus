@@ -4,7 +4,8 @@
 /* Variables */
 :root {
 	--color-header: #102437;
-	--color-primary: #9085d1;
+	--color-title: #9085d1;
+    --color-text: grey; 
 	--color-white: #fff;
 	--font-outfit: "Outfit", sans-serif;
 }
@@ -13,10 +14,10 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 li, a, button {
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: 500px;
     font-size: 16px;
     text-decoration: none;

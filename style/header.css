@@ -17,23 +17,23 @@
 }
 
 /* Navigation Bar */
-.topnav {
+.nav_bar {
     /* padding: 20px; */
     list-style: none;
 }
 
-.topnav li {
+.nav_bar li {
     display: inline-block;
     margin: auto;
     padding: 0 20px;
     text-decoration: none;
 }
 
-.topnav li a {
+.nav_bar li a {
     color: #d4d6e5;
 }
 
-.topnav a:hover {
+.nav_bar a:hover {
     text-decoration: underline #9085d1;
     color: white;
 }
