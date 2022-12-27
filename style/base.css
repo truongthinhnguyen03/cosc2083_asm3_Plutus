@@ -1,0 +1,25 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap");
+
+/* Variables */
+:root {
+	--color-nav: #102437;
+	--color-title: #9085d1;
+    --color-text: rgb(76, 76, 76); 
+	--color-center-text: #C3C8CD;
+	--color-white: #fff;
+	--font-outfit: "Outfit", sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li, a, button {
+    font-weight: 500px;
+    font-size: 16px;
+    text-decoration: none;
+}
