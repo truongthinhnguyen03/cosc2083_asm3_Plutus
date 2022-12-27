@@ -1,4 +1,4 @@
-let noOfCharac = 150;
+let noOfCharac = 400;
 let contents = document.querySelectorAll(".content");
 contents.forEach(content => {
     //If text length is less that noOfCharac... then hide the read more button
@@ -13,7 +13,7 @@ contents.forEach(content => {
 });
 
 function readMore(btn){
-    let post = btn.parentElement;
+    let post = btn.parentElement.parentElement;
     post.querySelector(".dots").classList.toggle("hide");
     post.querySelector(".more").classList.toggle("hide");
     btn.textContent == "Read More" ? btn.textContent = "Read Less" : btn.textContent = "Read More";

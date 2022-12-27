@@ -5,7 +5,7 @@
 :root {
 	--color-nav: #102437;
 	--color-title: #9085d1;
-    --color-text: grey; 
+    --color-text: rgb(76, 76, 76); 
 	--color-center-text: #C3C8CD;
 	--color-white: #fff;
 	--font-outfit: "Outfit", sans-serif;
