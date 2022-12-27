@@ -1,25 +1,25 @@
 ScrollReveal({
-    reset:false,
-    duration: 1500,
+    reset:true,
+    distance: '60px',
+    duration: 2500,
+    delay: 400
 });
 
-ScrollReveal().reveal('.heading', { 
+ScrollReveal().reveal('.header_elm, .center_header', { 
     delay: 300,
-    origin: 'bottom',
-    distance: '10rem',
+    origin: 'bottom'
 });
 
-ScrollReveal().reveal('.image', {
-    delay: 1000,
-    origin: window.innerWidth > 768 ? "left" : "bottom",
-    distance: '10rem',
+ScrollReveal().reveal('.scroll_img', {
+    delay: 400,
+    origin: 'left'
 });
 
-ScrollReveal().reveal('.paragraph', { 
-    delay: 1200,
-    origin: window.innerWidth > 768 ? "right" : "bottom",
-    distance: '10rem',
+ScrollReveal().reveal('.text_elm, .center_text', { 
+    delay: 800,
+    origin: 'right'
 });
-ScrollReveal().reveal('.headline');
-ScrollReveal().reveal('.tagline', { delay: 500 });
-ScrollReveal().reveal('.punchline', { delay: 2000 });
+
+ScrollReveal().reveal('.button_container', { 
+    delay: 600
+});
